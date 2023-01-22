@@ -1,12 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Jakanaka Production</title>
+  <link rel="shortcut icon" href="./images/icons/title.png" type="image/x-icon">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Customization -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            yellow: '#FECC02',
+            black: '#131313',
+            gray: '4E4E4E',
+          },
+          fontFamily: {
+            bebas: ["Bebas Neue", "cursive"],
+            montserrat: ["Montserrat", "sans-serif"],
+          }
+        }
+      }
+    }
+  </script>
 </head>
+
 <body>
-  
+
+  <header>
+    <!-- Navigation Bar Section -->
+    <section class=" fixed top-0 left-0 right-0 bg-white">
+      <nav class="container mx-auto flex flex-col md:flex-row justify-between items-center h-20 font-bebas">
+        <h2 class="text-2xl">Jakanaka Production</h2>
+        <ul class="flex gap-6">
+          <li><a href="">About Us</a></li>
+          <li><a href="">Our Movies</a></li>
+          <li><a href="">Services</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <!-- Header Banner -->
+    <section class="bg-[url('./images/banner.jpg')] bg-cover h-screen pt-20 ">
+      <div class="container mx-auto h-full flex items-center text-white">
+       <div>
+        <h3 class="font-bebas text-xl">Movie production studio</h3>
+        <h1  class="font-bebas text-7xl">Films Made to</h1>
+        <h1  class="font-bebas text-7xl text-yellow">Perfection</h1>
+        <p class="max-w-lg">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum laudantium temporibus a provident, esse qui ad illo obcaecati est consequuntur.
+        </p>
+        <button class="font-bebas border px-3 py-2 text-lg mt-10 hover:bg-yellow hover:text-black hover:border-yellow hover:transition-all">
+          Discover More
+        </button>
+       </div>
+
+      </div>
+    </section>
+  </header>
+
+
 </body>
+
 </html>
